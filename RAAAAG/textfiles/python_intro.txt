@@ -1,0 +1,222 @@
+
+    
+Complete Introduction to Python Programming
+
+What is Python?
+Python is a high-level, interpreted, and general-purpose programming language created by Guido van Rossum and released in 1991.
+
+Python is popular because it is:
+- Easy to learn
+- Simple to read
+- Powerful and flexible
+- Used in many industries
+
+Python is widely used in:
+- Web development
+- Artificial Intelligence
+- Data Science
+- Machine Learning
+- Automation
+- Cybersecurity
+- Game development
+- Scientific computing
+
+--------------------------------------------------
+
+Features of Python
+
+1. Simple and easy syntax
+2. Free and open source
+3. Cross-platform support
+4. Large standard library
+5. Supports object-oriented programming
+6. Dynamically typed
+7. Huge community support
+
+--------------------------------------------------
+
+Installing Python
+
+1. Visit the official website:
+   https://www.python.org
+
+2. Download the latest version.
+
+3. Install Python.
+
+4. During installation, check:
+   "Add Python to PATH"
+
+5. Verify installation:
+
+python --version
+
+--------------------------------------------------
+
+First Python Program
+
+print("Hello, World!")
+
+Output:
+Hello, World!
+
+--------------------------------------------------
+
+Variables in Python
+
+name = "Ravi"
+age = 21
+height = 5.9
+
+--------------------------------------------------
+
+Data Types in Python
+
+Integer:
+x = 10
+
+Float:
+y = 3.14
+
+String:
+name = "Python"
+
+Boolean:
+is_valid = True
+
+List:
+numbers = [1, 2, 3]
+
+Tuple:
+point = (10, 20)
+
+Dictionary:
+student = {
+    "name": "Ravi",
+    "age": 20
+}
+
+Set:
+values = {1, 2, 3}
+
+--------------------------------------------------
+
+Input and Output
+
+name = input("Enter your name: ")
+print(name)
+
+--------------------------------------------------
+
+Operators in Python
+
+Arithmetic Operators:
++  -  *  /  %
+
+Comparison Operators:
+>  <  ==  !=
+
+Logical Operators:
+and  or  not
+
+--------------------------------------------------
+
+Conditional Statements
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+--------------------------------------------------
+
+Loops in Python
+
+for Loop:
+for i in range(5):
+    print(i)
+
+while Loop:
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+
+--------------------------------------------------
+
+Functions in Python
+
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+
+--------------------------------------------------
+
+Lists in Python
+
+fruits = ["apple", "banana", "mango"]
+
+fruits.append("orange")
+
+--------------------------------------------------
+
+Object-Oriented Programming
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print(self.name)
+
+--------------------------------------------------
+
+File Handling
+
+file = open("data.txt", "w")
+file.write("Hello")
+file.close()
+
+--------------------------------------------------
+
+Exception Handling
+
+try:
+    num = int(input("Enter number: "))
+    print(num)
+
+except:
+    print("Invalid input")
+
+--------------------------------------------------
+
+Modules in Python
+
+import math
+
+print(math.sqrt(25))
+
+--------------------------------------------------
+
+Python Applications
+
+1. Web Development
+2. Data Science
+3. Machine Learning
+4. Artificial Intelligence
+5. Automation
+6. Cybersecurity
+
+--------------------------------------------------
+
+Best IDEs for Python
+
+1. VS Code
+2. PyCharm
+3. Jupyter Notebook
+4. IDLE
+
+    
