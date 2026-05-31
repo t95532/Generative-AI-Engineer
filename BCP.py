@@ -86,28 +86,25 @@ databaseName = 'vscode' #sys.argv[4];
 # except Exception as e:
 #     raise RuntimeError('BCP Command Failed. Customer Predictions have been written to the CSV already, try executing BCP Command from terminal directly..')
 
-try:
-    result = subprocess.run(
-        [
-            "bash",
-            "executeBCP.bash",
-            "rclvResults.csv",
-            r"LAPTOP-82AUC5I5\SQLEXPRESS"
-        ],
-        check=True,
-        text=True,
-        capture_output=True
-    )
+from pathlib import Path
+import subprocess
 
-    print("STDOUT:")
-    print(result.stdout)
+csv_path = Path(__file__).parent / "rclvResults.csv"
 
-except subprocess.CalledProcessError as e:
-    print("Return Code:", e.returncode)
-    print("STDOUT:")
-    print(e.stdout)
-    print("STDERR:")
-    print(e.stderr)
+subprocess.run(
+    [
+        "bcp",
+        f"{databaseName}.dbo.{destination_table}",
+        "in",
+        str(csv_path),
+        "-S", serverName,
+        "-T",
+        "-c",
+        "-t", ",",
+        "-F", "2"
+    ],
+    check=True
+)
 
 
 timeElapsed = time.time() - st
